@@ -4,37 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fábio Alves</title>
+    <style>
+      img {
+        width: 200px;
+      }
+    </style>
   </head>
-  <body>
+  <body onload="start()">
+    <!-- the start() funtion its only 
+      to get the current year and subtract by my birthday, 
+      to keep it up to date :) -->
+
     <h1>Fábio's Profile</h1>
-    <hr />
     <img
       src="https://avatars3.githubusercontent.com/u/64048314?s=460&u=5dddd476bfb958ad920aeeeca58b7a32e87e3a39&v=4"
       alt="Fábio Alves photos"
     />
-    <ul>
-      <li>Fábio Alves aka FabyoSK</li>
-      <li id="bornDate">Born in Boa Vista - Cape Verde 🏝️</li>
-      <li></li>
-      <li></li>
-    </ul>
     <hr />
+
+    <!-- About section -->
     <h2>About</h2>
+    <p id="born">Hi, My name is Fábio, i'm </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus labore
-      esse ab tempore ea exercitationem voluptatum eum distinctio, corporis,
-      soluta vero dolorum facilis dolor possimus officiis, a incidunt error!
-      Natus!
+      I'm from Boa Vista, I grew up using technology, and when I started programming I saw that this was what I wanted to do with my life
     </p>
+    <p>
+      I love to program and create things, feeling of seeing my work working is totally amazing.
+    </p>
+    <p></p>
+
+    <!-- Social Media links -->
     <a href="https://www.linkedin.com/in/fabyosk">Linkedin</a>
     <a href="https://github.com/FabyoSK">Github</a>
     <a href="https://twitter.com/FabyoSK">Twitter</a>
+    <a href="mailto:fabioalves.contacto@gmail.com">My Email</a>
     <hr />
-    <h2>Summary</h2>
+
+    <!-- A photo section with some photos by me -->
+    <h2>From Boa Vista 🏝️ - Cape Verde 🇨🇻 </h3>
+    <p>Here some pictures of my paradise❤️</p>
+
+    <img
+      src="resources/fsk-sunrise-rabil-boavista.jpeg"
+      alt="Sunrise in Rabil, Boa Vista"
+    />
+    <img
+      src="resources/fsk-glasses-praia-chave.jpg"
+      alt="Fábio's glasses in sand"
+    />
+
+    <img src="resources/fsk-morr-areia.jpg" alt="" />
+
+    <img src="resources/fsk-santa-maria.jpeg" alt="" />
+
+    <!-- 
+      src="resources/fsk-rabil-boavista.jpeg"
+      alt="Boa ventura street in Rabil, Boa Vista"
+    />
+     -->
+
+
+
+     <!-- This p is kind a footer -->
+
+     <p>From Boa Vista with ❤️</p>
+     <!-- A simple script to keep the date up to date LOL -->
     <script>
-      var bornDate = document.getElementById(bornDate);
-      var hora = data.getHours();
-      bornDate.innerHTML = `Agora são Horas.`;
+      function start() {
+        var born = document.getElementById("born");
+        var data = new Date();
+        var currentYear = data.getFullYear() - 1;
+        var age = currentYear - 2002;
+  
+        born.innerHTML = `${born.textContent}${age} Years old`;
+      }
     </script>
   </body>
 </html>
