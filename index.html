@@ -4,78 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fábio Alves</title>
-    <style>
-      img {
-        width: 200px;
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="start()">
     <!-- the start() funtion its only 
       to get the current year and subtract by my birthday, 
       to keep it up to date :) -->
+    <div class="container">
+      <main>
+        <h1>Fábio's Profile</h1>
+        <img
+          src="https://avatars3.githubusercontent.com/u/64048314?s=460&u=5dddd476bfb958ad920aeeeca58b7a32e87e3a39&v=4"
+          alt="Fábio Alves photos"
+        />
+        <p>a Gamer</p>
+      </main>
 
-    <h1>Fábio's Profile</h1>
-    <img
-      src="https://avatars3.githubusercontent.com/u/64048314?s=460&u=5dddd476bfb958ad920aeeeca58b7a32e87e3a39&v=4"
-      alt="Fábio Alves photos"
-    />
-    <hr />
+      <hr />
+      <section>
+        <h2>About</h2>
+        <p id="born">Hi, My name is Fábio, i'm</p>
+        <p>
+          I'm from Boa Vista, I grew up using technology, and when I started
+          programming I saw that this was what I wanted to do with my life
+        </p>
+        <p>
+          I love to program and create things, feeling of seeing my work working
+          is totally amazing.
+        </p>
+      </section>
+      <!-- About section -->
+      <hr />
+      <p></p>
+      <section class="social">
+        <!-- Social Media links -->
+        <h1>Social Networks</h1>
+        <a href="https://www.linkedin.com/in/fabyosk" class="logos"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/FabyoSK" class="logos"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/FabyoSK" class="logos"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:fabioalves.contacto@gmail.com" class="logos"><i class="far fa-envelope"></i></a>
+      </section>
 
-    <!-- About section -->
-    <h2>About</h2>
-    <p id="born">Hi, My name is Fábio, i'm </p>
-    <p>
-      I'm from Boa Vista, I grew up using technology, and when I started programming I saw that this was what I wanted to do with my life
-    </p>
-    <p>
-      I love to program and create things, feeling of seeing my work working is totally amazing.
-    </p>
-    <p></p>
+      <hr />
 
-    <!-- Social Media links -->
-    <a href="https://www.linkedin.com/in/fabyosk">Linkedin</a>
-    <a href="https://github.com/FabyoSK">Github</a>
-    <a href="https://twitter.com/FabyoSK">Twitter</a>
-    <a href="mailto:fabioalves.contacto@gmail.com">My Email</a>
-    <hr />
+      <!-- A photo section with some photos by me -->
+      <h2>From Boa Vista 🏝️ - Cape Verde 🇨🇻</h2>
+      <p>Here some pictures of my paradise❤️</p>
+      <div class="galery">
+        <img
+          src="resources/fsk-sunrise-rabil-boavista.jpeg"
+          alt="Sunrise in Rabil, Boa Vista"
+        />
+        <img
+          src="resources/fsk-glasses-praia-chave.jpg"
+          alt="Fábio's glasses in sand"
+        />
 
-    <!-- A photo section with some photos by me -->
-    <h2>From Boa Vista 🏝️ - Cape Verde 🇨🇻 </h3>
-    <p>Here some pictures of my paradise❤️</p>
+        <img src="resources/fsk-morr-areia.jpg" alt="" />
 
-    <img
-      src="resources/fsk-sunrise-rabil-boavista.jpeg"
-      alt="Sunrise in Rabil, Boa Vista"
-    />
-    <img
-      src="resources/fsk-glasses-praia-chave.jpg"
-      alt="Fábio's glasses in sand"
-    />
+        <img src="resources/fsk-santa-maria.jpeg" alt="" />
+      </div>
 
-    <img src="resources/fsk-morr-areia.jpg" alt="" />
-
-    <img src="resources/fsk-santa-maria.jpeg" alt="" />
-
-    <!-- 
+      <!-- 
       src="resources/fsk-rabil-boavista.jpeg"
       alt="Boa ventura street in Rabil, Boa Vista"
     />
      -->
 
+      <!-- This p is kind a footer -->
 
-
-     <!-- This p is kind a footer -->
-
-     <p>From Boa Vista with ❤️</p>
-     <!-- A simple script to keep the date up to date LOL -->
+      <footer>From Boa Vista with ❤️</footer>
+      <!-- A simple script to keep the date up to date LOL -->
+    </div>
+    <script src="https://kit.fontawesome.com/00a6de709e.js" crossorigin="anonymous"></script>
     <script>
       function start() {
         var born = document.getElementById("born");
         var data = new Date();
         var currentYear = data.getFullYear() - 1;
         var age = currentYear - 2002;
-  
+
         born.innerHTML = `${born.textContent}${age} Years old`;
       }
     </script>
