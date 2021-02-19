@@ -7,6 +7,7 @@
   --background-color: #f05454;
   --background-soft-color: #dddddd;
   --header-color: #dddddd;
+  --dark-bg: #222831;
 
   font-size: 60%;
 }
@@ -69,18 +70,27 @@ main p {
   padding: 32px;
 }
 .logos {
+  display: block;
   padding: 16px;
   border: 1px solid black;
-  border-radius: 30%;
+  border-radius: 20px;
   margin: 10px;
   color: #000;
   background: white;
+  width: 250px;
 }
 .logos:hover {
-  color: var(--header-color);
-  transition: 100ms;
+  color: #dddddd;
+  transition: 250ms;
+  background: var(--dark-bg);
 }
+.summary{
+  margin: 32px 0;
+}
+.summary-content{
+  padding: 12px;
 
+}
 .galery {
   padding: 0;
   margin: 0;
@@ -98,7 +108,7 @@ section {
 .red-bg-section {
 }
 .dark-bg-section {
-  background-color: #222831;
+  background-color: var(--dark-bg);
 }
 .test {
   margin: auto;
