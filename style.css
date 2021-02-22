@@ -88,7 +88,7 @@ section > section {
   margin: 12px 0;
   padding: 32px 12px;
 }
-.summary-content a{
+.summary-content a {
   display: block;
   padding: 16px;
   border: 1px solid black;
@@ -98,7 +98,7 @@ section > section {
   background: var(--header-color);
   text-align: center;
 }
-.summary-content a:hover{
+.summary-content a:hover {
   color: #dddddd;
   transition: 250ms;
   background: var(--background-color);
@@ -159,7 +159,6 @@ footer {
     z-index: 1;
     top: 0;
     overflow-x: hidden;
-    padding-top: 20px;
     position: fixed;
   }
 
